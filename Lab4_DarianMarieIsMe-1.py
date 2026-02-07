@@ -28,7 +28,7 @@ card_suits = ["h", "d", "c", "s"]
 hand = []
 
 
-print(f"You have requested {users_cards} cards. Here is your hand:")
+print("You have requested " + str(users_cards) + " cards. Here is your hand:")
 
 # Logic to print hand of cards
 
@@ -36,4 +36,4 @@ while len(hand) < users_cards:
     card = random.choice(card_values) + random.choice(card_suits)
     if card not in hand:
         hand.append(card)
-print(hand)
+    print(card)
